@@ -1,0 +1,77 @@
+<html>
+<head>	<title>Conversion Calculator</title>
+	<link rel="stylesheet" href="./style.css" />
+    
+	<script src="./common.js"></script>
+
+	<script src="./conversion.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+<style>
+body{
+font-family: Zilla Slab;
+margin-bottom: 3%;
+}
+</style>
+    
+</head>
+<body>
+<div id="headerout">
+	<div id="header"><h1 style="color:white; font-size:30px; padding-left:5px; ">Ayurveda Conversion Calculator</h1>
+	</div>
+</div>
+<div id="clear"></div><div id="contentout"><div id="content"><h1>Conversion Calculator</h1>
+<p>Use this Conversion Calculator to convert between Ayurvedic Metric Units (Classical Units) &amp; Modern Metric Equivalent. <br> Select the current unit in the left column, the desired unit in the right column, and enter a value in the left column to generate the resulting conversion. </p>
+<br>
+    
+<div id="topmenu">conversion calculator</div>
+<script>
+popMenu("Length");
+currentAName = lA;
+</script>
+    
+<div class="panel2" style="padding:12px;">
+<table width="500" border="0" cellspacing="0" cellpadding="0">
+<form name="calForm">
+	<tr><td width="200"><b>From:</b></td><td width="300"><b>To:</b></td></tr>
+	<tr><td><input type="text" name="fromVal" onKeyUp="calcul();" style="width:175px;"></td><td><input type="text" name="toVal" style="width:275px;"></td></tr>
+	<tr><td style="padding-top:5px;">
+	<select name="calFrom" id="calFrom" onChange="calcul();" size="10" style="width:180px;  height: 295px;"></select></td><td style="padding-top:5px;">
+	<select name="calTo" id="calTo" size="10" onChange="calcul();" style="width:280px; height: 295px;"></select></td></tr>
+	
+	
+</form>
+</table>
+</div>
+    
+<script>
+showSel(lA);
+</script>
+</div>
+	
+<div id="right">
+		<div style='padding-left:0px; border: 3px dotted green; margin-left: 30px; padding-bottom: 70px;'>
+<!--  Body Tags Start Here  -->
+<h1 style="background: #eee; padding: 10px;">Other Links</h1>
+<br>1. <a href="units_table.html">Unit Table</a>
+<br>2. <a href="what-is-ayurveda/">What is Ayurveda?</a>
+</div>
+    
+<div style='padding-left:0px; border: 3px dotted green; margin-left: 30px; padding-bottom: 70px; margin-top:10px;'>
+<!--  Body Tags Start Here  -->
+<h1 style="background: #eee; padding: 10px;">Meta</h1>
+    Made by <a href="https://github.com/iamarav">Gaurav Sachdeva</a> &amp; Ayush<br>
+	Available on Github: <i><a href="https://github.com/wedozy/">@wedozy</i></a>
+    <br>
+<!--<br><a href=""></a>-->
+</div>
+    
+<br>
+</div>
+</div>
+<div id="clear"></div>
+<div id="footer"><div id="footerin"><div id="footernav"><a href="https://github.com/wedozy/Ayurveda-to-Modern-Converter">Github</a> | &copy; 2018</div></div></div>
+
+
+</body>
+</html>
